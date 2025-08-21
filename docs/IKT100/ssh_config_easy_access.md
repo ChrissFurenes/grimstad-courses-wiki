@@ -23,19 +23,10 @@ Host ikt100                     # Dette er aliaset du bruker for å koble til se
 # NB windows brukere må bruke \ til å navigere i mapper
 ```
 
-### 3. legge til hostnavn i lokal maskin sin DNS
-#### For __Windows__:
-1. Åpne Notisblokk som __administrator__ og trykk ctrl + O for å åpne en fil.
-2. Gå til `C:\Windows\System32\drivers\etc\hosts`. Husk at du må velge __"Alle filer"__ i filtypevelgeren for å se `hosts`-filen.
-3. Legg til følgende linje nederst i filen:
-```
-10.225.149.214 ikt100
-```
-4. Lagre filen.
+### 3. Bruk av alias
+Når du har opprettet konfigurasjonsfilen, kan du enkelt koble til
+serveren ved å bruke aliaset du har definert. For eksempel, for å koble til serveren `ikt100`, kan du bruke følgende kommando:
 
-#### For __Linux__ og __MacOS__:
-Åpne terminalen og kjør kommandoen:
-   ```bash
-   echo "10.225.149.214 ikt100" | sudo tee -a /etc/hosts
-   ```
-
+```bash
+ssh ikt100
+```
