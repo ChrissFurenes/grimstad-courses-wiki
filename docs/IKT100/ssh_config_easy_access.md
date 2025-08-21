@@ -3,8 +3,7 @@
 ## SSH Config
 For å gjøre det enklere å logge inn på kjente SSH-servere, kan du bruke en SSH-konfigurasjonsfil. Denne filen lar deg spesifisere aliaser for servere, slik at du slipper å skrive hele kommandoen og ip adressen hver gang.
 
-### Oppretting av SSH-konfigurasjonsfil
-#### 1. opprette ``config`` filen
+### 1. Oppretting av SSH-konfigurasjonsfil
 i mappen ``.ssh`` som ligger under bruker mappen din. Inni denne mappen lager du en fil med navnet `config`.
 ##### __Windows__
 ``C:\Users\<brukernavn>\.ssh\config``
@@ -24,7 +23,7 @@ Host ikt100                     # Dette er aliaset du bruker for å koble til se
 # NB windows brukere må bruke \ til å navigere i mapper
 ```
 
-### legge til hostnavn i lokal maskin sin DNS
+### 3. legge til hostnavn i lokal maskin sin DNS
 #### For __Windows__:
 1. Åpne Notisblokk som __administrator__ og trykk ctrl + O for å åpne en fil.
 2. Gå til `C:\Windows\System32\drivers\etc\hosts`. Husk at du må velge __"Alle filer"__ i filtypevelgeren for å se `hosts`-filen.
